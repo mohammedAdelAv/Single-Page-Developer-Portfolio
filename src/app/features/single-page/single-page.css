@@ -1,0 +1,236 @@
+/* top */
+
+.portfolio .container .top p {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.portfolio .container .top .socialIcons {
+  position: relative;
+}
+
+.portfolio .container .socialIcons::before {
+  position: absolute;
+  content: '';
+  width: 500px;
+  height: 700px;
+  background-size: cover;
+  background-image: url('../../../../public/assets/images/personal.png');
+  background-repeat: no-repeat;
+  top: 40px;
+  right: 30px;
+}
+
+.portfolio .container .top .socialIcons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* top */
+
+/* content */
+
+.portfolio .container .content {
+  width: 52rem;
+  height: 19rem;
+  position: relative;
+}
+
+.portfolio .container .content::before {
+  position: absolute;
+  content: '';
+  width: 33rem;
+  height: 8rem;
+  background-image: url('../../../../public/assets/images/pattern-rings.svg');
+  background-repeat: no-repeat;
+  display: block;
+  top: -70px;
+  left: -260px;
+  overflow: hidden;
+}
+
+.portfolio .container .content::after {
+  position: absolute;
+  content: '';
+  width: 129px;
+  height: 129px;
+  background-image: url('../../../../public/assets/images/pattern-circle.svg');
+  background-repeat: no-repeat;
+  top: 400px;
+  right: 7px;
+}
+
+.portfolio .container .content h1 {
+  color: var(--color-white);
+  font-size: var(--heading-xl-size);
+  line-height: var(--heading-xl-line);
+  letter-spacing: var(--heading-xl-spacing);
+  font-weight: var(--heading-xl-weight);
+}
+
+.portfolio .container .content h1 .break {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-green-primary);
+  text-underline-offset: 10px;
+}
+
+.portfolio .container .content p {
+  color: var(--color-white);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: var(--body-weight);
+}
+
+.portfolio .container .content .btn {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: var(--body-line);
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-green-primary);
+  text-underline-offset: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* end content */
+
+/* hr */
+.portfolio .container .hr {
+  border: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  margin-top: 400px;
+  margin-bottom: 40px;
+}
+
+/* expertise */
+
+.portfolio .container .expertise {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.portfolio .container .expertise::after {
+  position: absolute;
+  content: '';
+  width: 33rem;
+  height: 8rem;
+  background-image: url('../../../../public/assets/images/pattern-rings.svg');
+  background-repeat: no-repeat;
+  display: block;
+  bottom: 10px;
+  right: -380px;
+}
+
+.portfolio .container .expertise .container .row .col {
+  color: var(--color-white);
+  font-size: var(--heading-l-size);
+  line-height: var(--heading-l-line);
+  letter-spacing: var(--heading-l-spacing);
+  font-weight: var(--heading-l-weight);
+}
+
+.portfolio .container .expertise .container .row .p {
+  color: var(--color-white);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: var(--body-weight);
+  margin-top: 10px;
+}
+
+/* end expertise */
+
+/* project */
+
+.portfolio .container .projects  {
+  margin-bottom: 200px;
+}
+
+.portfolio .container .projects h2 {
+  color: var(--color-white);
+  font-size: var(--heading-xl-size);
+  line-height: var(--heading-xl-line);
+  letter-spacing: var(--heading-xl-spacing);
+  font-weight: var(--heading-xl-weight);
+}
+
+.portfolio .container .projects .btn {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: var(--body-line);
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-green-primary);
+  text-underline-offset: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: auto 0;
+}
+
+.portfolio .container .projects .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.portfolio .container .projects .grid .imageWrapper {
+  position: relative;
+}
+
+.portfolio .container .projects .grid .imageWrapper .imgFluid {
+  width: 40rem;
+  height: 30rem;
+}
+
+.portfolio .container .projects .grid .imageWrapper .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio .container .projects .grid .imageWrapper:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio .container .projects .grid .imageWrapper .overlayLink {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 2px solid var(--color-green-primary);
+  padding-bottom: 4px;
+}
+
+.portfolio .container .projects .grid .imageWrapper .overlayLink:hover {
+  color: var(--color-green-primary);
+}
+
+.portfolio .container .projects .grid .projectName {
+  color: var(--color-white);
+  font-size: var(--heading-m-size);
+  line-height: var(--heading-m-line);
+  letter-spacing: var(--heading-m-spacing);
+  font-weight: var(--heading-m-weight);
+}
+
+.portfolio .container .projects .grid .tools {
+  color: var(--color-white);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: var(--body-weight);
+}
+
+/* end project */

@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "Image": "assets/images/Personal Finance App.webp",
+      "id": "2sd3",
+      "projectName": "Personal Finance App",
+      "tools": "Angular, TS, Bootstrap, HTML, CSS",
+      "RepositoryURL": "https://github.com/mohammedAdelAv/Personal-Finance-App",
+      "LiveSiteURL": ""
+    },
+    {
+      "Image": "assets/images/Tech Book Club.webp",
+      "id": "rwe4",
+      "projectName": "Tech Book Club",
+      "tools": "HTML, CSS",
+      "RepositoryURL": "https://github.com/mohammedAdelAv/tech-book-club",
+      "LiveSiteURL": "https://mohammedadelav.github.io/tech-book-club/"
+    },
+    {
+      "Image": "assets/images/thumbnail-project-3-large.webp",
+      "id": "vrr3",
+      "projectName": "Todo App",
+      "tools": "HTML, CSS, JS",
+      "RepositoryURL": "https://github.com/mohammedAdelAv/To-Do",
+      "LiveSiteURL": "https://mohammedadelav.github.io/To-Do/"
+    },
+    {
+      "Image": "assets/images/Bento Grid.webp",
+      "id": "4df5",
+      "projectName": "Bento Grid",
+      "tools": "HTML, CSS",
+      "RepositoryURL": "https://github.com/mohammedAdelAv/Bento-grid-main",
+      "LiveSiteURL": "https://mohammedadelav.github.io/Bento-grid-main/"
+    },
+    {
+      "Image": "assets/images/Recipe Page.webp",
+      "id": "b8a3",
+      "projectName": "Recipe Page",
+      "tools": "HTML, CSS",
+      "RepositoryURL": "https://github.com/mohammedAdelAv/recipe-page-main",
+      "LiveSiteURL": "https://mohammedadelav.github.io/recipe-page-main/"
+    },
+    {
+      "Image": "assets/images/Social Links Profile.webp",
+      "id": "7768",
+      "projectName": "Social Links Profile",
+      "tools": "HTML, CSS",
+      "RepositoryURL": "https://github.com/mohammedAdelAv/Social-links-profile",
+      "LiveSiteURL": "https://mohammedadelav.github.io/Social-links-profile/"
+    }
+  ]
+}

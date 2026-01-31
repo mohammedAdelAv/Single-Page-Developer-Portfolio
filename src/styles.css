@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* primary  */
+  --color-black-900: #151515;
+  --color-black-800: #242424;
+  --color-green-primary: #4ee1a0;
+  --color-gray-300: #d9d9d9;
+  --color-white: #ffffff;
+
+  /* font family */
+  --font-primary: 'Space Grotesk', sans-serif;
+
+  /* Heading XL */
+  --heading-xl-size: 88px;
+  --heading-xl-line: 88px;
+  --heading-xl-spacing: -2.5px;
+  --heading-xl-weight: 700;
+
+  /* Heading L */
+  --heading-l-size: 48px;
+  --heading-l-line: 56px;
+  --heading-l-spacing: -1.5px;
+  --heading-l-weight: 700;
+
+  /* Heading M */
+  --heading-m-size: 24px;
+  --heading-m-line: 32px;
+  --heading-m-weight: 700;
+
+  /* Body */
+  --body-size: 18px;
+  --body-line: 28px;
+  --body-weight: 500;
+}
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-black-900);
+}
