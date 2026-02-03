@@ -1,13 +1,23 @@
 /* top */
 
+.portfolio .container .top {
+  margin: 30px 0px 120px 0px;
+}
+
 .portfolio .container .top p {
   color: var(--color-white);
   font-size: 2rem;
   font-weight: bold;
+  margin: auto 0;
 }
 
 .portfolio .container .top .socialIcons {
   position: relative;
+}
+
+.portfolio .container .top .socialIcons .icon:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5196%) hue-rotate(73deg)
+    brightness(95%) contrast(85%);
 }
 
 .portfolio .container .socialIcons::before {
@@ -96,6 +106,10 @@
   padding: 0;
 }
 
+.portfolio .container .content .btn:hover {
+  color: var(--color-green-primary);
+}
+
 /* end content */
 
 /* hr */
@@ -146,7 +160,7 @@
 
 /* project */
 
-.portfolio .container .projects  {
+.portfolio .container .projects {
   margin-bottom: 200px;
 }
 
@@ -171,6 +185,10 @@
   border: none;
   padding: 0;
   margin: auto 0;
+}
+
+.portfolio .container .projects .btn:hover {
+  color: var(--color-green-primary);
 }
 
 .portfolio .container .projects .grid {
@@ -234,3 +252,132 @@
 }
 
 /* end project */
+
+/* footer */
+
+.portfolio .footerBg {
+  background-color: var(--color-black-800);
+  width: 100%;
+}
+
+.portfolio .container .footer {
+  padding: 50px 0;
+  position: relative;
+}
+
+.portfolio .container .footer::before {
+  position: absolute;
+  content: '';
+  width: 33rem;
+  height: 8rem;
+  background-image: url('../../../../public/assets/images/pattern-rings.svg');
+  background-repeat: no-repeat;
+  display: block;
+  top: 300px;
+  left: -350px;
+  overflow: hidden;
+}
+
+.portfolio .container .footer .leftSide h3 {
+  color: var(--color-white);
+  font-size: var(--heading-xl-size);
+  line-height: var(--heading-xl-line);
+  letter-spacing: var(--heading-xl-spacing);
+  font-weight: var(--heading-xl-weight);
+}
+
+.portfolio .container .footer .leftSide p {
+  color: var(--color-white);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: var(--body-weight);
+  margin-top: 40px;
+}
+
+.portfolio .container .footer .rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px;
+}
+
+.portfolio .container .footer .rightSide label {
+  color: var(--color-white);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: var(--body-weight);
+}
+
+.portfolio .container .footer .rightSide input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-white);
+  font-size: 16px;
+  
+}
+
+.portfolio .container .footer .rightSide .alert {
+  padding: 0px;
+  border: none;
+  margin: 0px;
+  color: red;
+  text-align: right;
+}
+
+.portfolio .container .footer .rightSide input:hover,
+.portfolio .container .footer .rightSide input:focus {
+  border-bottom: 2px solid var(--color-green-primary);
+}
+
+.portfolio .container .footer .btn {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: var(--body-line);
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-green-primary);
+  text-underline-offset: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  padding-top: 50px;
+  width: 7rem;
+}
+
+.portfolio .container .footer .btn:hover {
+  cursor: pointer;
+  color: var(--color-green-primary);
+}
+
+.portfolio .container .hr1 {
+  border: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+
+.portfolio .container .down p {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.portfolio .container .down .socialIcon {
+  position: relative;
+}
+
+.portfolio .container .down .socialIcon img:hover{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5196%) hue-rotate(73deg)
+    brightness(95%) contrast(85%);
+}
+
+.portfolio .container .down .socialIcon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* end footer */

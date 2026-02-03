@@ -1,16 +1,20 @@
 <div class="portfolio">
   <div class="container">
-    <div class="top d-flex justify-content-between align-items-center mt-2 mb-4">
+    <div class="top d-flex justify-content-between align-items-center">
       <p>mohammedadel</p>
       <div class="socialIcons d-flex justify-content-around gap-4">
         <a href="https://github.com/mohammedAdelAv">
-          <img src="assets/images/icon-github.svg" alt="Github icon" />
+          <img src="assets/images/icon-github.svg" alt="Github icon" class="icon" />
         </a>
         <a href="">
-          <img src="assets/images/icon-linkedin.svg" alt="linkedin icon" />
+          <img src="assets/images/icon-linkedin.svg" alt="linkedin icon" class="icon" />
         </a>
         <a href="https://www.frontendmentor.io/profile/mohammedAdelAv">
-          <img src="assets/images/icon-frontend-mentor.svg" alt="Frontend mentor icon" />
+          <img
+            src="assets/images/icon-frontend-mentor.svg"
+            alt="Frontend mentor icon"
+            class="icon"
+          />
         </a>
       </div>
     </div>
@@ -83,4 +87,76 @@
       </div>
     </div>
   </div>
+  <footer class="footerBg">
+    <div class="container">
+      <form [formGroup]="massageForm">
+        <div class="row footer">
+          <div class="leftSide col-lg-6 col-12">
+            <h3>Contact</h3>
+            <p>
+              I would love to hear about your project and how I <br />
+              could help. Please fill in the form, and I’ll get back <br />
+              to you as soon as possible.
+            </p>
+          </div>
+
+          <div class="rightSide col-lg-6 col-12">
+            <label for="NAME">NAME</label>
+            <input type="text" name="NAME" id="NAME" formControlName="name" />
+            @if (controls['name'].touched && controls['name'].invalid) {
+              <div class="alert">
+                <div *ngIf="controls['name'].errors?.['required']">Name is required.</div>
+              </div>
+            }
+            <label for="EMAIL">EMAIL</label>
+            <input type="email" name="EMAIL" id="EMAIL" formControlName="email" />
+            @if (controls['email'].touched && controls['email'].invalid) {
+              <div class="alert">
+                <div *ngIf="controls['email'].errors?.['required']">Email is required.</div>
+                <div *ngIf="controls['email'].errors?.['email']">
+                  Please enter a valid email address.
+                </div>
+              </div>
+            }
+
+            <label for="MESSAGE">MESSAGE</label>
+            <input type="text" name="MESSAGE" id="MESSAGE" formControlName="message" />
+            @if (controls['message'].touched && controls['message'].invalid) {
+              <div class="alert">
+                <div *ngIf="controls['message'].errors?.['required']">Message is required.</div>
+                <div *ngIf="controls['message'].errors?.['minlength']">
+                  Message must be at least 10 characters long.
+                </div>
+              </div>
+            }
+          </div>
+          <div class="text-end">
+            <button
+              type="submit"
+              class="btn"
+              (click)="submit(massageForm)"
+              [disabled]="massageForm.invalid"
+            >
+              CONTACT ME
+            </button>
+          </div>
+          <hr class="hr1" />
+          <div class="down d-flex justify-content-between align-items-center mt-2 mb-4">
+            <p>mohammedadel</p>
+            <div class="socialIcon d-flex justify-content-around gap-4">
+              <a href="https://github.com/mohammedAdelAv">
+                <img src="assets/images/icon-github.svg" alt="Github icon" />
+              </a>
+              <a href="">
+                <img src="assets/images/icon-linkedin.svg" alt="linkedin icon" />
+              </a>
+              <a href="https://www.frontendmentor.io/profile/mohammedAdelAv">
+                <img src="assets/images/icon-frontend-mentor.svg" alt="Frontend mentor icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </footer>
 </div>
