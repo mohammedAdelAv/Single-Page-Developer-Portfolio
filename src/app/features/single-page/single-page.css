@@ -315,7 +315,34 @@
   border-bottom: 2px solid var(--color-white);
   color: var(--color-white);
   font-size: 16px;
-  
+}
+
+.portfolio .container .footer .rightSide input.border-valid {
+  border-bottom: 2px solid var(--color-green-primary);
+}
+
+.portfolio .container .footer .rightSide input.border-invalid {
+  border-bottom: 2px solid red;
+}
+
+.portfolio .container .footer .rightSide input.border-invalid:hover,
+.portfolio .container .footer .rightSide input.border-invalid:focus
+{
+  border-bottom: 2px solid red;
+}
+
+.portfolio .container .footer .rightSide .email {
+  position: relative;
+}
+
+.portfolio .container .footer .rightSide .invalidImg {
+  position: absolute;
+  right: 10px;
+  top: -190%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
 }
 
 .portfolio .container .footer .rightSide .alert {
@@ -370,7 +397,7 @@
   position: relative;
 }
 
-.portfolio .container .down .socialIcon img:hover{
+.portfolio .container .down .socialIcon img:hover {
   filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(5196%) hue-rotate(73deg)
     brightness(95%) contrast(85%);
 }

@@ -102,25 +102,60 @@
 
           <div class="rightSide col-lg-6 col-12">
             <label for="NAME">NAME</label>
-            <input type="text" name="NAME" id="NAME" formControlName="name" />
+            <input
+              type="text"
+              name="NAME"
+              id="NAME"
+              formControlName="name"
+              [ngClass]="{
+                'border-valid': controls['name'].valid,
+                'border-invalid': controls['name'].touched && controls['name'].invalid,
+              }"
+            />
             @if (controls['name'].touched && controls['name'].invalid) {
               <div class="alert">
                 <div *ngIf="controls['name'].errors?.['required']">Name is required.</div>
               </div>
             }
             <label for="EMAIL">EMAIL</label>
-            <input type="email" name="EMAIL" id="EMAIL" formControlName="email" />
+            <input
+              class="email"
+              type="email"
+              name="EMAIL"
+              id="EMAIL"
+              formControlName="email"
+              [ngClass]="{
+                'border-valid': controls['email'].valid,
+                'border-invalid': controls['email'].touched && controls['email'].invalid,
+              }"
+            />
+
             @if (controls['email'].touched && controls['email'].invalid) {
               <div class="alert">
                 <div *ngIf="controls['email'].errors?.['required']">Email is required.</div>
                 <div *ngIf="controls['email'].errors?.['email']">
                   Please enter a valid email address.
+                  <span
+                    class="invalidImg"
+                    *ngIf="controls['email'].touched && controls['email'].invalid"
+                  >
+                    <img src="assets/images/Group 25.svg" alt="icon error" />
+                  </span>
                 </div>
               </div>
             }
 
             <label for="MESSAGE">MESSAGE</label>
-            <input type="text" name="MESSAGE" id="MESSAGE" formControlName="message" />
+            <input
+              type="text"
+              name="MESSAGE"
+              id="MESSAGE"
+              formControlName="message"
+              [ngClass]="{
+                'border-valid': controls['message'].valid,
+                'border-invalid': controls['message'].touched && controls['message'].invalid,
+              }"
+            />
             @if (controls['message'].touched && controls['message'].invalid) {
               <div class="alert">
                 <div *ngIf="controls['message'].errors?.['required']">Message is required.</div>
