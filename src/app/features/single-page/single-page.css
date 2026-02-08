@@ -390,7 +390,160 @@
 
 /* end footer */
 
-@media (max-width: 500px) {
+@media (max-width: 1045px) {
+
+
+/* content */
+
+.portfolio .container .content .rings {
+  top: -30px;
+  left: -300px;
+}
+
+.portfolio .container .content .personalImage {
+  width: 430px;
+  height: 600px;
+}
+
+.portfolio .container .content .circle {
+  right: -100px;
+  bottom: -10px;
+}
+
+.portfolio .container .content h1 {
+   padding-top: 5rem;
+  color: var(--color-white);
+  font-size: 55px;
+  line-height: var(--heading-l-line);
+  letter-spacing: var(--heading-l-spacing);
+  font-weight: var(--heading-l-weight);
+}
+
+.portfolio .container .content p {
+ padding-top: 4rem;
+}
+
+/* end content */
+
+  /* project */
+
+  .portfolio .container .projects h2 {
+    font-size: var(--heading-l-size);
+    line-height: var(--heading-l-line);
+    letter-spacing: var(--heading-l-spacing);
+    font-weight: var(--heading-l-weight);
+  }
+
+  .portfolio .container .projects .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .portfolio .container .projects .grid .imageWrapper .overlay {
+    display: none;
+  }
+
+  .portfolio .container .projects .grid .imageWrapper .imgFluid {
+    width: 29rem;
+    height: 20rem;
+  }
+
+  .portfolio .container .projects .grid .imageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio .container .projects .grid .imageWrapper .overlay {
+    position: static;
+    opacity: 1;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 12px;
+    pointer-events: auto;
+  }
+
+  .portfolio .projectName,
+  .portfolio .tools {
+    text-align: center !important;
+  }
+
+  /* end project */
+}
+
+@media (max-width: 992px) {
+  /* project */
+
+    .portfolio .container .projects .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+
+  .portfolio .projectName,
+  .portfolio .tools {
+    text-align: left !important;
+  }
+
+   .portfolio .container .projects .grid .imageWrapper .imgFluid {
+    width: 43rem;
+    height: 32rem;
+  }
+
+  /* end project */
+
+  /* content */
+
+  .portfolio .container .content .rings {
+    top: -30px;
+    left: -300px;
+  }
+
+  .portfolio .container .content .personalImage {
+    width: 350px;
+    height: 540px;
+  }
+
+  .portfolio .container .content .circle {
+    left: 700px;
+    bottom: 10px;
+  }
+
+  .portfolio .container .content h1 {
+    padding-top: 5rem;
+    font-size: var(--heading-l-size);
+    line-height: var(--heading-l-line);
+    letter-spacing: var(--heading-l-spacing);
+    font-weight: var(--heading-l-weight);
+  }
+
+  .portfolio .container .content p {
+    padding-top: 3rem;
+  }
+
+  /* end content */
+
+  /* hr */
+  .portfolio .container .hr {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 770px) {
+  /* project */
+
+  .portfolio .container .projects .grid .imageWrapper .imgFluid {
+    width: 31rem;
+    height: 25rem;
+  }
+
+  /* end project */
+}
+
+@media (max-width: 550px) {
   /* top */
 
   .portfolio .container .top {
@@ -493,43 +646,9 @@
 
   /* project */
 
-  .portfolio .container .projects h2 {
-    font-size: var(--heading-l-size);
-    line-height: var(--heading-l-line);
-    letter-spacing: var(--heading-l-spacing);
-    font-weight: var(--heading-l-weight);
-  }
-
-  .portfolio .container .projects .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
-  }
-
-  .portfolio .container .projects .grid .imageWrapper .overlay {
-    display: none;
-  }
-
   .portfolio .container .projects .grid .imageWrapper .imgFluid {
-    width: 22rem;
-    height: 16rem;
-  }
-
-  .portfolio .container .projects .grid .imageWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .portfolio .container .projects .grid .imageWrapper .overlay {
-    position: static;
-    opacity: 1;
-    background: transparent;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    margin-top: 12px;
-    pointer-events: auto;
+    width: 22rem !important;
+    height: 16rem !important;
   }
 
   .portfolio .projectName,
@@ -588,7 +707,7 @@
   }
 
   .portfolio .container .down p {
-     display: flex;
+    display: flex;
     justify-content: center;
     text-align: center;
   }
