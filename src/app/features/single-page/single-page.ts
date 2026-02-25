@@ -51,7 +51,10 @@ export class SinglePage implements OnInit {
   }
 
   submit(messageForm: any) {
-    this.serv.post(messageForm.value).subscribe((res: any) => { });
+    if (this.messageForm.invalid) return;
+    this.serv.post(messageForm.value).subscribe((res: any) => {
+      this.messageForm.reset();
+    });
   }
 
 
