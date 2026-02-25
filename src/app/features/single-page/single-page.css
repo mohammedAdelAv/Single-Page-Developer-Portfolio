@@ -391,39 +391,37 @@
 /* end footer */
 
 @media (max-width: 1045px) {
+  /* content */
 
+  .portfolio .container .content .rings {
+    top: -30px;
+    left: -300px;
+  }
 
-/* content */
+  .portfolio .container .content .personalImage {
+    width: 430px;
+    height: 600px;
+  }
 
-.portfolio .container .content .rings {
-  top: -30px;
-  left: -300px;
-}
+  .portfolio .container .content .circle {
+    right: -100px;
+    bottom: -10px;
+  }
 
-.portfolio .container .content .personalImage {
-  width: 430px;
-  height: 600px;
-}
+  .portfolio .container .content h1 {
+    padding-top: 5rem;
+    color: var(--color-white);
+    font-size: 55px;
+    line-height: var(--heading-l-line);
+    letter-spacing: var(--heading-l-spacing);
+    font-weight: var(--heading-l-weight);
+  }
 
-.portfolio .container .content .circle {
-  right: -100px;
-  bottom: -10px;
-}
+  .portfolio .container .content p {
+    padding-top: 4rem;
+  }
 
-.portfolio .container .content h1 {
-   padding-top: 5rem;
-  color: var(--color-white);
-  font-size: 55px;
-  line-height: var(--heading-l-line);
-  letter-spacing: var(--heading-l-spacing);
-  font-weight: var(--heading-l-weight);
-}
-
-.portfolio .container .content p {
- padding-top: 4rem;
-}
-
-/* end content */
+  /* end content */
 
   /* project */
 
@@ -477,7 +475,7 @@
 @media (max-width: 992px) {
   /* project */
 
-    .portfolio .container .projects .grid {
+  .portfolio .container .projects .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
@@ -488,7 +486,7 @@
     text-align: left !important;
   }
 
-   .portfolio .container .projects .grid .imageWrapper .imgFluid {
+  .portfolio .container .projects .grid .imageWrapper .imgFluid {
     width: 43rem;
     height: 32rem;
   }
@@ -568,14 +566,14 @@
   /* content */
 
   .portfolio .container .content .rings {
-    left: -360px;
+    left: -400px;
   }
 
   .portfolio .container .content .personalImage {
     left: 50%;
     transform: translateX(-50%);
-    width: 20rem;
-    height: 30rem;
+    width: 18rem;
+    height: 27rem;
     top: -100px;
     right: 0;
     z-index: -1;
@@ -585,12 +583,12 @@
     position: absolute;
     width: 129px;
     height: 129px;
-    left: 370px;
-    top: 250px;
+    left: 340px;
+    top: 200px;
   }
 
   .portfolio .container .content h1 {
-    padding-top: 30rem;
+    padding-top: 25rem;
     font-size: 40px;
     line-height: var(--heading-l-line);
     letter-spacing: var(--heading-l-spacing);
@@ -632,6 +630,7 @@
     font-weight: bold;
     margin-bottom: 0px !important;
     text-align: center !important;
+    
   }
 
   .portfolio .container .expertise .container .row .p {
@@ -720,4 +719,8 @@
   }
 
   /* end footer */
+
+  br {
+    display: none;
+  }
 }
