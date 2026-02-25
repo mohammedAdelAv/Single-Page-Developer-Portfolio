@@ -97,7 +97,7 @@
   </div>
   <footer class="footerBg" id="contact">
     <div class="container">
-      <form [formGroup]="massageForm">
+      <form [formGroup]="messageForm">
         <div class="row footer">
           <div class="leftSide col-lg-6 col-12">
             <h3>Contact</h3>
@@ -177,8 +177,8 @@
             <button
               type="submit"
               class="btn"
-              (click)="submit(massageForm)"
-              [disabled]="massageForm.invalid"
+              (click)="submit(messageForm)"
+              [disabled]="messageForm.invalid"
             >
               SEND MESSAGE
             </button>

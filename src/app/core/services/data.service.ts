@@ -12,7 +12,7 @@ import { Message } from '../models/message';
 export class DataService {
 
   private dataUrl = 'http://localhost:3005/projects';
-  private messagesUrl = 'http://localhost:3005/massages';
+  private messagesUrl = 'http://localhost:3005/messages';
 
   constructor(private http: HttpClient) { }
 

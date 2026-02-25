@@ -15,7 +15,7 @@ import { Message } from '../../core/models/message';
 export class SinglePage implements OnInit {
 
   // 1
-  massageForm!: FormGroup;
+  messageForm!: FormGroup;
 
   projectsData: Projects[] = [];
 
@@ -31,12 +31,12 @@ export class SinglePage implements OnInit {
 
   // 4
   get controls() {
-    return this.massageForm.controls;
+    return this.messageForm.controls;
   }
 
   // 2
   createForm() {
-    this.massageForm = this.fb.group({
+    this.messageForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(10)]],
@@ -50,8 +50,8 @@ export class SinglePage implements OnInit {
     });
   }
 
-  submit(massageForm: any) {
-    this.serv.post(massageForm.value).subscribe((res: any) => { });
+  submit(messageForm: any) {
+    this.serv.post(messageForm.value).subscribe((res: any) => { });
   }
 
 
